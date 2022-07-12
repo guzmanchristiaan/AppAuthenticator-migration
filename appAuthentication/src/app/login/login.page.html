@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+    <ion-img class="img-logo" src="../../assets/img/logo.svg"></ion-img>
+ </ion-header>
+ <ion-content [fullscreen]="true">
+     <ion-card>
+        <ion-list>
+            <ion-item>
+                <ion-label>Idioma</ion-label>
+                <ion-select >
+                    <ion-select-option>Espanol</ion-select-option>
+                    <ion-select-option>Ingles</ion-select-option>
+                </ion-select>
+            </ion-item>
+        </ion-list>
+         <ion-card-header>
+            <ion-label class="title-card">Log in</ion-label>
+         </ion-card-header>
+         <ion-card-content>
+            <ion-input class="dash-input" type="text" placeholder="user" slot="end"><ion-icon name="person"></ion-icon></ion-input>
+            <ion-input class="dash-input" type="text" placeholder="password" slot="end"><ion-icon name="lock-closed"></ion-icon></ion-input>
+            <div class="control-btn">
+                <button class="outline-btn">Iniciar</button>
+                <button class="outline-btn">Registrate</button>
+            </div>
+            <div class="fingerPrint">
+                <p>ingresa con huella</p>
+                <ion-img src="assets/img/fingerprint.svg"></ion-img>
+            </div>
+            <div class="face"  style="display: none;">
+                <p>ingresa por reconocimiento facial</p>
+                <ion-img src="assets/img/facial.svg">
+                </ion-img>
+            </div>
+         </ion-card-content>
+       </ion-card>
+ </ion-content>
+ 
