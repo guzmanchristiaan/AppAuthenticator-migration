@@ -44,12 +44,19 @@ ion-card-content {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin: 10px 0;
 
   button {
     margin: 0 10px;
     padding: 10px;
-    min-width: 100x
+    min-width: 100x;
+
+    &:first-child {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -73,29 +80,15 @@ ion-icon {
   font-weight: 700;
 }
 
-
-.fingerPrint,
-.face {
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-
-  ion-img {
-    width: 4rem;
-  }
+ion-list {
+  --ion-item-background: transparent;
 }
 
-ion-list,
 ion-item {
-  background-color: transparent;
+  --border-color: transparent;
 }
 
-ion-item::part(native) {
-  background: transparent;
-  border: none;
-}
+
+
 
 

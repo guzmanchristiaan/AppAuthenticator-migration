@@ -10,8 +10,13 @@
             <ion-input class="dash-input" type="text" placeholder="user" slot="end"><ion-icon name="person"></ion-icon></ion-input>
             <ion-input class="dash-input" type="text" placeholder="password" slot="end"><ion-icon name="lock-closed"></ion-icon></ion-input>
             <div class="control-btn">
-                <button>Aceptar terminos y condiciones <ion-icon name="checkmark"></ion-icon></button>
-                <button class="outline-btn">Afiliate</button>
+                <ion-list>
+                    <ion-item>
+                      <ion-label>Aceptar terminos y condiciones</ion-label>
+                      <ion-checkbox slot="end"></ion-checkbox>
+                    </ion-item>
+                  </ion-list>
+                <ion-button class="outline-btn">Afiliate</ion-button>
             </div>
          </ion-card-content>
        </ion-card>

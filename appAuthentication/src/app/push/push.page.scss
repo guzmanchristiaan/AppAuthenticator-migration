@@ -20,14 +20,6 @@ ion-content {
 ion-card-header {
   display: flex;
   justify-content: space-between;
-
-  & ion-icon {
-    font-size: 24px;
-
-    &:last-child {
-      color: #ff3c00;
-    }
-  }
 }
 
 ion-card {
@@ -51,3 +43,15 @@ ion-card-content {
   font-size: 14px;
 }
 
+ion-list {
+  --ion-item-background: transparent;
+}
+
+.list {
+  width: 100%;
+}
+
+ion-icon {
+  font-size: 24px;
+  color: #ff3c00;
+}

@@ -31,6 +31,26 @@ const routes: Routes = [
     path: 'tk-qr',
     loadChildren: () => import('./tk-qr/tk-qr.module').then( m => m.TkQrPageModule)
   },
+  {
+    path: 'condiciones',
+    loadChildren: () => import('./condiciones/condiciones.module').then( m => m.CondicionesPageModule)
+  },
+  {
+    path: 'desafiliar',
+    loadChildren: () => import('./desafiliar/desafiliar.module').then( m => m.DesafiliarPageModule)
+  },
+  {
+    path: 'gc',
+    loadChildren: () => import('./gc/gc.module').then( m => m.GcPageModule)
+  },
+  {
+    path: 'inbox',
+    loadChildren: () => import('./inbox/inbox.module').then( m => m.InboxPageModule)
+  },
+  {
+    path: 'push',
+    loadChildren: () => import('./push/push.module').then( m => m.PushPageModule)
+  },
 ];
 
 @NgModule({
